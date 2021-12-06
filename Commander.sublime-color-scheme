@@ -1,0 +1,80 @@
+{
+    "name": "Commander",
+    "author": "Nikita Prokopov",
+    "globals":
+    {
+        "foreground":                  "#00FFFF",
+        "background":                  "#000080",
+        "caret":                       "#FFFFFF",
+        "block_caret":                 "#008080",
+        "block_caret_border":          "#008080",
+        "block_caret_corner_style":    "square",
+        "line_highlight":              "#000070",
+        "misspelling":                 "#FF0000",
+        "selection":                   "#008080",
+        "selection_foreground":        "#FFFFFF",
+        "selection_border_width":      "0",
+        "selection_corner_style":      "square",
+        "inactive_selection":          "#007070",
+        "selection_corner_radius":     "2",
+        "highlight":                   "#FFFF00",
+        "find_highlight_foreground":   "#000000",
+        "find_highlight":              "#FFFF00",
+        "brackets_options":            "foreground underline",
+        "brackets_foreground":         "#FFFFFF",
+        "bracket_contents_options":    "foreground underline",
+        "bracket_contents_foreground": "#FFFFFF",
+        "tags_options":                "foreground",
+        "tags_foreground":             "#FFFFFF"
+    },
+    "rules":
+    [
+        {"name":       "Comment",
+         "scope":      "comment, punctuation.definition.comment",
+         "foreground": "#FFFFFF"},
+
+        {"name":       "String",
+         "scope":      "string",
+         "foreground": "#00FF00"},
+
+        {"name":       "Escapes",
+         "scope":      "constant.character.escape, constant.other.placeholder",
+         "foreground": "#008080"},
+
+        {"name":       "Punctuation",
+         "scope":      "punctuation - punctuation.section, keyword.operator, string punctuation.section",
+         "foreground": "#008080"},
+
+        {"name":       "Inner brackets",
+         "scope":      "meta.parens meta.parens punctuation.section, meta.parens meta.brackets punctuation.section, meta.parens meta.braces punctuation.section, meta.brackets meta.parens punctuation.section, meta.brackets meta.brackets punctuation.section, meta.brackets meta.braces punctuation.section, meta.braces meta.parens punctuation.section, meta.braces meta.brackets punctuation.section, meta.braces meta.braces punctuation.section",
+         "foreground": "#008080"},
+
+        {"name":       "Constants",
+         "scope":      "constant",
+         "foreground": "#00FF00"},
+
+        {"name":       "Definitions",
+         "scope":      "entity.name",
+         "foreground": "#FFFF00"},
+
+        {"name":       "Mistakes",
+         "scope":      "invalid",
+         "foreground": "#FFFFFF",
+         "background": "#800000"},
+
+        {"scope": "markup.inserted",
+         "foreground": "#00FF00"},
+
+        {"scope": "markup.deleted",
+         "foreground": "#FF0000"},
+         
+        {"scope": "markup.changed",
+         "foreground": "#FFFF00"},
+
+        {"scope": "markup.ignored",
+         "foreground": "#808080"},
+
+        {"scope": "markup.untracked",
+         "foreground": "#808080"},
+    ]
+}
